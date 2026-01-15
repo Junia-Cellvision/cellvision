@@ -4,17 +4,17 @@
 
 - mamba
 - ssh & scp
-- access to local junia server
+- accès au serveur junia local
 
 ## Setup
 
-1. Create mamba env 
+1. Créer un environnement mamba
 
 ```bash
 mamba env create -f env.yml
 ```
 
-2. Activate env
+2. Activer l'env
 
 ```bash
 mamba activate cellvision
@@ -25,4 +25,18 @@ mamba activate cellvision
 ```bash
 scp -r student_cellvision@10.40.150.7:Datasets/Electrophysiology/Islet_MEA60_60HexaMEA_MCS/ ./datasets
 
+```
+
+## Ajouter une dépendance
+
+1. Installer la dépendance
+
+```bash
+pip install <dependency>
+```
+
+2. Ajouter la dépendance à l'environnement
+
+```bash
+mamba env export --from-history > env.yml
 ```
