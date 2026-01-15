@@ -20,10 +20,10 @@ mamba env create -f env.yml
 mamba activate cellvision
 ```
 
-3. Récupérer les datasets depuis le serveur
+3. Récupérer les datasets normalisés depuis le serveur
 
 ```bash
-scp -r student_cellvision@10.40.150.7:Datasets/Electrophysiology/Islet_MEA60_60HexaMEA_MCS/ ./datasets
+scp -r student_cellvision@10.40.150.7:normalized_datasets normalized_datasets/
 
 ```
 
