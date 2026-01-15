@@ -2,5 +2,9 @@
 
 ## Setup
 
-1. Download https://drive.google.com/file/d/1fYGTQQPJdZeIBpUpuhIYt9KTPoSWuony/view?usp=sharing and extract it into ./measures/Islet_MEA60_60HexaMEA_MCS-20160120/
-2. Todo
+1. Récupérer les datasets depuis le serveur
+
+```bash
+scp -r student_cellvision@10.40.150.7:Datasets/Electrophysiology/Islet_MEA60_60HexaMEA_MCS/ ./datasets
+
+```
